@@ -1,0 +1,146 @@
+* {
+    /* Aplica esta configuración a todos los elementos de la página. */
+    box-sizing: border-box;
+    /* Hace que padding y borde se incluyan dentro del tamaño del elemento. */
+}
+
+body {
+    /* Configura toda la página. */
+    font-family: Arial, sans-serif;
+    /* Establece Arial como fuente principal. */
+
+    background-color: #f2f2f2;
+    /* Establece el color gris claro del fondo. */
+
+    margin: 0;
+    /* Elimina el margen predeterminado del navegador. */
+
+    padding: 0;
+    /* Elimina el espacio interno predeterminado. */
+}
+
+.contenedor {
+    /* Configura la caja principal. */
+    width: 450px;
+    /* Define un ancho de 450 píxeles. */
+
+    margin: 50px auto;
+    /* Coloca 50 píxeles arriba y centra horizontalmente. */
+
+    background-color: white;
+    /* Establece el fondo blanco. */
+
+    padding: 30px;
+    /* Agrega espacio interno de 30 píxeles. */
+
+    border-radius: 10px;
+    /* Redondea las esquinas. */
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    /* Agrega una sombra alrededor del contenedor. */
+}
+
+h1 {
+    /* Configura el título principal. */
+    text-align: center;
+    /* Centra el texto. */
+
+    margin-bottom: 10px;
+    /* Agrega espacio debajo del título. */
+}
+
+p {
+    /* Configura el párrafo. */
+    text-align: center;
+    /* Centra el texto. */
+
+    color: #666;
+    /* Establece un color gris para el texto. */
+}
+
+.formulario {
+    /* Configura la sección que contiene los campos. */
+    display: flex;
+    /* Activa el sistema flexible de CSS. */
+
+    flex-direction: column;
+    /* Coloca los elementos uno debajo de otro. */
+}
+
+label {
+    /* Configura las etiquetas de los campos. */
+    margin-top: 15px;
+    /* Agrega espacio encima de cada etiqueta. */
+
+    margin-bottom: 5px;
+    /* Agrega espacio debajo de cada etiqueta. */
+
+    font-weight: bold;
+    /* Hace que el texto aparezca en negritas. */
+}
+
+input {
+    /* Configura todos los campos de entrada. */
+    padding: 10px;
+    /* Agrega espacio interno. */
+
+    border: 1px solid #ccc;
+    /* Agrega un borde gris. */
+
+    border-radius: 5px;
+    /* Redondea las esquinas del campo. */
+
+    font-size: 16px;
+    /* Define el tamaño del texto. */
+}
+
+button {
+    /* Configura todos los botones. */
+    margin-top: 25px;
+    /* Agrega espacio encima del botón. */
+
+    padding: 12px;
+    /* Agrega espacio interno al botón. */
+
+    background-color: #007bff;
+    /* Establece el color azul del botón. */
+
+    color: white;
+    /* Hace que el texto sea blanco. */
+
+    border: none;
+    /* Elimina el borde predeterminado. */
+
+    border-radius: 5px;
+    /* Redondea las esquinas. */
+
+    font-size: 16px;
+    /* Define el tamaño del texto. */
+
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón. */
+}
+
+button:hover {
+    /* Define qué ocurre cuando el cursor pasa sobre el botón. */
+    background-color: #0056b3;
+    /* Cambia el azul a un tono más oscuro. */
+}
+
+.resultado {
+    /* Configura el espacio donde aparece el resultado. */
+    margin-top: 25px;
+    /* Agrega espacio encima del resultado. */
+
+    padding: 15px;
+    /* Agrega espacio interno. */
+
+    text-align: center;
+    /* Centra el resultado. */
+
+    border-radius: 5px;
+    /* Redondea las esquinas. */
+
+    font-size: 18px;
+    /* Define el tamaño del texto del resultado. */
+}

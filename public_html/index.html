@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<!-- Indica que el documento utiliza HTML5. -->
+
+<html lang="es">
+<!-- Inicia el documento HTML y establece el idioma en español. -->
+
+<head>
+<!-- Contiene la configuración de la página que no se muestra directamente. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar correctamente acentos, ñ y otros caracteres especiales. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página se adapte al tamaño de la pantalla. -->
+
+    <title>Sistema de Calificaciones</title>
+    <!-- Define el nombre que aparece en la pestaña del navegador. -->
+
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Conecta este archivo HTML con el archivo de estilos CSS. -->
+
+</head>
+<!-- Cierra la sección de configuración. -->
+
+<body>
+<!-- Inicia todo el contenido visible de la página. -->
+
+    <div class="contenedor">
+    <!-- Crea el contenedor principal del sistema. -->
+
+        <h1>Sistema de Calificaciones</h1>
+        <!-- Muestra el título principal. -->
+
+        <p>Captura las calificaciones del alumno</p>
+        <!-- Muestra una pequeña descripción del formulario. -->
+
+        <div class="formulario">
+        <!-- Agrupa todos los campos y botones del formulario. -->
+
+            <label for="nombre">Nombre del alumno:</label>
+            <!-- Texto que identifica el campo para escribir el nombre. -->
+
+            <input type="text" id="nombre" placeholder="Escribe el nombre">
+            <!-- Campo donde el usuario escribe el nombre del alumno. -->
+
+            <label for="edad">Edad:</label>
+            <!-- Texto que identifica el campo de edad. -->
+
+            <input type="number" id="edad" min="1" max="100">
+            <!-- Campo numérico para introducir la edad del alumno. -->
+
+            <label for="calificacion1">Calificación 1:</label>
+            <!-- Identifica la primera calificación. -->
+
+            <input type="number" id="calificacion1" min="0" max="10" step="0.1">
+            <!-- Permite introducir la primera calificación entre 0 y 10. -->
+
+            <label for="calificacion2">Calificación 2:</label>
+            <!-- Identifica la segunda calificación. -->
+
+            <input type="number" id="calificacion2" min="0" max="10" step="0.1">
+            <!-- Permite introducir la segunda calificación entre 0 y 10. -->
+
+            <label for="calificacion3">Calificación 3:</label>
+            <!-- Identifica la tercera calificación. -->
+
+            <input type="number" id="calificacion3" min="0" max="10" step="0.1">
+            <!-- Permite introducir la tercera calificación entre 0 y 10. -->
+
+            <label for="calificacion4">Calificación 4:</label>
+            <!-- Identifica la cuarta calificación. -->
+
+            <input type="number" id="calificacion4" min="0" max="10" step="0.1">
+            <!-- Permite introducir la cuarta calificación entre 0 y 10. -->
+
+            <button onclick="calcularPromedio()">
+                Calcular promedio
+            </button>
+            <!-- Al hacer clic ejecuta la función calcularPromedio(). -->
+
+            <button onclick="agregarAlumno()">
+                Agregar
+            </button>
+            <!-- Al hacer clic ejecuta la función agregarAlumno(). -->
+
+            <button onclick="limpiar()">
+                Limpiar
+            </button>
+            <!-- Al hacer clic ejecuta la función limpiar(). -->
+
+        </div>
+        <!-- Cierra el formulario. -->
+
+        <div id="resultado" class="resultado">
+        <!-- Espacio donde JavaScript mostrará el resultado. -->
+
+        </div>
+        <!-- Cierra el área del resultado. -->
+
+    </div>
+    <!-- Cierra el contenedor principal. -->
+
+    <script src="script.js"></script>
+    <!-- Conecta el HTML con el archivo JavaScript. -->
+
+</body>
+<!-- Cierra el contenido visible de la página. -->
+
+</html>
+<!-- Termina el documento HTML. -->
